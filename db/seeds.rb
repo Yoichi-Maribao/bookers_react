@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+BOOK = [
+  { title: 'ONE PIECE', body: 'GOMUGOMU'},
+  { title: 'NARUTO', body: 'RASENGAN'},
+  { title: 'BLEACH', body: 'GETSUGA-TENSHO'},
+  { title: 'DRAGON BALL', body: 'KAMEHAMEHA'}
+]
+
+BOOK.each do |book|
+  Book.create(book)
+end
